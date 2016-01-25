@@ -63,7 +63,7 @@ ToeFu.Game.prototype.create = function(){
 };
 
 ToeFu.Game.prototype.update = function(){
-
+  
   // set facing direction
   if(this.player_1.x< this.player_2.x){
     this.player_1.facing = ToeFu.Player.FACING.RIGHT;

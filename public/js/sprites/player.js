@@ -110,6 +110,15 @@ ToeFu.Player.FACING = {
 
 //is invoked on every frame
 ToeFu.Player.prototype.update = function(){
+    //console.log(this.body.velocity.x);
+    if (this.body.velocity.x == -WALK_SPEED) {
+      console.log('left!');
+      this.facing = ToeFu.Player.FACING.LEFT;
+    }
+    if (this.body.velocity.x == WALK_SPEED) {
+      console.log('right!');
+      this.facing = ToeFu.Player.FACING.RIGHT;
+    }
 
    // update facing
     if( this.alive ){
